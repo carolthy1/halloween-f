@@ -4,7 +4,7 @@ body {
   background-image: url("img/halloween.jpg");
   overflow: hidden;
   position: relative;
-  background-size: cover;
+  background-size: 100vw 100vh;
   background-repeat: no-repeat;
 }
 
@@ -78,4 +78,60 @@ body {
 #text_cadastro a {
   color: #ff6600;
   cursor: pointer;
+}
+
+/* Estilos para dispositivos com largura de tela até 767px (telefones em orientação retrato) */
+@media (max-width: 767px) {
+  .login,
+  .cadastrar {
+    width: 90%;
+    padding: 3vh;
+    margin-top: 35%;
+  }
+
+  #nome,
+  #password,
+  #C_nome,
+  #C_password {
+    height: 30px;
+  }
+
+  #send,
+  #C_send {
+    height: 30px;
+    margin-top: 10px;
+  }
+
+  #text_cadastro {
+    font-size: 14px;
+    margin-top: 10px;
+  }
+}
+
+/* Estilos para dispositivos com largura de tela de 768px a 1023px (tablets em orientação retrato) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .login,
+  .cadastrar {
+    width: 70%;
+    padding: 4vh;
+    margin-top: 35%;
+  }
+
+  #nome,
+  #password,
+  #C_nome,
+  #C_password {
+    height: 35px;
+  }
+
+  #send,
+  #C_send {
+    height: 35px;
+    margin-top: 15px;
+  }
+
+  #text_cadastro {
+    font-size: 16px;
+    margin-top: 15px;
+  }
 }
