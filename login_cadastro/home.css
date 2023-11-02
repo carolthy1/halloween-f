@@ -1,15 +1,19 @@
 body {
   margin: 10px;
   padding: 0;
-  background-image: url("img/homephoto.jpg");
+  background-image: url("imghome/homephoto.jpg");
   overflow: hidden;
   position: relative;
   background-size: 100vw 100vh;
   display: flex;
   justify-content: center;
+  flex-direction: column;
   background-repeat: no-repeat;
 }
-
+header {
+  display: flex;
+  justify-content: center;
+}
 .contain {
   display: flex;
   justify-content: center;
@@ -24,7 +28,7 @@ body {
   border: 1px solid #ff6600;
   padding: 8vh;
   border-radius: 10px;
-  margin-top: 3vw;
+  margin-top: -5vw;
   justify-content: center;
   backdrop-filter: blur(10px);
   background-color: rgba(223, 223, 223, 0.056);
@@ -41,6 +45,29 @@ h1 {
   -webkit-text-stroke-width: 1px; /* largura da borda */
   -webkit-text-stroke-color: #000; /* cor da borda */
   font-size: 38px;
+}
+
+#titlle {
+  color: rgb(255, 123, 0);
+  display: flex;
+  margin-top: 8vh;
+  justify-content: center;
+  font-family: Creepster;
+  -webkit-text-stroke-width: 1px; /* largura da borda */
+  -webkit-text-stroke-color: #000; /* cor da borda */
+  font-size: 38px;
+}
+
+#jogador {
+  color: rgb(241, 116, 0);
+  display: flex;
+  margin-top: 8vh;
+  justify-content: center;
+  font-family: Creepster;
+  -webkit-text-stroke-width: 2px; /* largura da borda */
+  -webkit-text-stroke-color: #000; /* cor da borda */
+  font-size: 38px;
+  margin-left: 1vh;
 }
 
 #cemiterio,
