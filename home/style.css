@@ -1,0 +1,56 @@
+body {
+  margin: 10px;
+  padding: 0;
+  background-image: url("img/homephoto.jpg");
+  overflow: hidden;
+  position: relative;
+  background-size: 100vw 100vh;
+  display: flex;
+  justify-content: center;
+  background-repeat: no-repeat;
+}
+
+.contain {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7vh;
+  margin-top: 14vh;
+}
+
+.fase1,
+.fase2,
+.fase3 {
+  border: 1px solid #ff6600;
+  padding: 8vh;
+  border-radius: 10px;
+  margin-top: 3vw;
+  justify-content: center;
+  backdrop-filter: blur(10px);
+  background-color: rgba(223, 223, 223, 0.056);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+h1 {
+  color: rgb(255, 123, 0);
+  margin-top: -4vh;
+  display: flex;
+  justify-content: center;
+  font-family: Creepster;
+  -webkit-text-stroke-width: 1px; /* largura da borda */
+  -webkit-text-stroke-color: #000; /* cor da borda */
+  font-size: 38px;
+}
+
+#cemiterio,
+#bruxas {
+  width: 100%;
+  border-radius: 15px;
+}
+
+#cabana {
+  width: 85%;
+  border-radius: 15px;
+  margin-left: 4vh;
+}

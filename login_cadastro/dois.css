@@ -19,7 +19,7 @@ body {
   display: flex;
   flex-direction: column;
   border: 1px solid #ff6600;
-  padding: 5vh;
+  padding: 8vh;
   border-radius: 10px;
   margin-top: 7vw;
   justify-content: center;
@@ -33,7 +33,7 @@ body {
 #C_nome,
 #C_password {
   width: 100%; /* Mantendo a mesma proporção em relação à largura do contêiner pai */
-  height: 2vw; /* Mantendo a mesma proporção em relação à largura da tela */
+  height: 22px; /* Mantendo a mesma proporção em relação à largura da tela */
   margin-top: 1vh;
   margin-bottom: 1vh;
   border-radius: 8px;
@@ -59,17 +59,17 @@ body {
   background-color: #ff6600;
   border-radius: 8px;
   color: aliceblue;
-  height: 2vw; /* Mantendo a mesma proporção em relação à largura da tela */
-  width: 60%; /* Mantendo a mesma proporção em relação à largura do contêiner pai */
+  height: 28px; /* Mantendo a mesma proporção em relação à largura da tela */
+  width: 55%; /* Mantendo a mesma proporção em relação à largura do contêiner pai */
   border: #f4af82;
   margin-top: 2vh;
   cursor: pointer;
-  margin-left: 3vw;
+  margin-left: 45px;
 }
 
 #text_cadastro {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 18px; /* Mantendo a mesma proporção em relação à largura da tela */
+  font-size: 13px; /* Mantendo a mesma proporção em relação à largura da tela */
   text-align: center;
   margin-top: 2vw; /* Mantendo a mesma proporção em relação à largura da tela */
   color: aliceblue;
@@ -103,7 +103,7 @@ body {
   }
 
   #text_cadastro {
-    font-size: 14px;
+    font-size: 10px;
     margin-top: 10px;
   }
 }
