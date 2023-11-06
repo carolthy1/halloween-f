@@ -28,6 +28,14 @@ body {
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+#error-message {
+  color: red;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  display: flex;
+  justify-content: center;
+  font-size: small;
+}
+
 #nome,
 #password,
 #C_nome,
