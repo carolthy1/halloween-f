@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function () {
       password: password,
     };
 
-    fetch("http://172.16.31.24:3000/api/login", {
+    fetch("http://172.16.31.44:3000/api/login", {
       // Alterado para o seu endereço IP e porta
       method: "POST",
       headers: {
@@ -95,5 +95,27 @@ document.addEventListener("DOMContentLoaded", function () {
     localStorage.setItem("nomeDoJogador", nomeDoJogador);
 
     // Redireciona para a página onde você deseja mostrar o nome do jogador
+  });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  var troca = document.getElementById("cadastrar");
+  var trocadiv = document.getElementById("login");
+  var trocaLink1 = document.getElementById("volta");
+
+  // Inicialmente, mostrar a div de login e ocultar a div de cadastro
+  troca.style.display = "flex";
+  trocadiv.style.display = "none";
+
+  // Adicionar um event listener ao link 'troca'
+  trocaLink1.addEventListener("click", function () {
+    // Alternar a exibição das divs de login e cadastro
+    if (troca.style.display === "flex") {
+      troca.style.display = "none";
+      trocadiv.style.display = "flex";
+    } else {
+      troca.style.display = "flex";
+      trocadiv.style.display = "none";
+    }
   });
 });

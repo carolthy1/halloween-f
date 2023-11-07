@@ -143,3 +143,15 @@ body {
     margin-top: 15px;
   }
 }
+
+#C_text_login{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 13px; /* Mantendo a mesma proporção em relação à largura da tela */
+  text-align: center;
+  margin-top: 2vw; /* Mantendo a mesma proporção em relação à largura da tela */
+  color: aliceblue;
+}
+#C_text_login a {
+  color: #ff6600;
+  cursor: pointer;
+}
