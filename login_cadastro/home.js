@@ -11,3 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
     jogadorElement.textContent = nomeDoJogador;
   }
 });
+
+function irParaDesafio1() {
+  window.location.href = "desafio1.html";
+}
