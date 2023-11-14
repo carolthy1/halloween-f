@@ -36,6 +36,14 @@ body {
   font-size: small;
 }
 
+#C_error-message {
+  color: red;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  display: flex;
+  justify-content: center;
+  font-size: small;
+}
+
 #nome,
 #password,
 #C_nome,
@@ -144,7 +152,7 @@ body {
   }
 }
 
-#C_text_login{
+#C_text_login {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 13px; /* Mantendo a mesma proporção em relação à largura da tela */
   text-align: center;

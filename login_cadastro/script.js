@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function () {
       password: password,
     };
 
-    fetch("http://172.16.31.44:3000/api/login", {
+    fetch("http://172.16.31.24:3000/api/login", {
       // Alterado para o seu endereço IP e porta
       method: "POST",
       headers: {
@@ -60,6 +60,8 @@ document.addEventListener("DOMContentLoaded", function () {
       password: password,
     };
 
+    var errorMessageElement = document.getElementById("C_error-message");
+
     fetch("http://172.16.31.24:3000/api/cadastrar", {
       method: "POST",
       headers: {
@@ -75,7 +77,8 @@ document.addEventListener("DOMContentLoaded", function () {
         if (data.success) {
           window.location.href = "home.html";
         } else {
-          console.error("Erro ao cadastrar usuário");
+          // Mostrar mensagem de erro ao cadastrar usuário
+          errorMessageElement.textContent = "Erro ao cadastrar usuário";
         }
       })
       .catch((error) => {
