@@ -28,8 +28,7 @@ document.addEventListener("DOMContentLoaded", function () {
       password: password,
     };
 
-    fetch("http://172.16.31.24:3000/api/login", {
-      // Alterado para o seu endereço IP e porta
+    fetch("https://bacend-d4ze.onrender.com/api/login", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -62,7 +61,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     var errorMessageElement = document.getElementById("C_error-message");
 
-    fetch("http://172.16.31.24:3000/api/cadastrar", {
+    fetch("https://bacend-d4ze.onrender.com/api/cadastrar", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
