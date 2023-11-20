@@ -6,27 +6,44 @@ document.addEventListener("DOMContentLoaded", function () {
   let score = 0;
   let foundCount = 0;
 
+  // Recuperar pontuação anterior (se existir)
+  const storedScore = localStorage.getItem("score");
+  if (storedScore) {
+    score = parseInt(storedScore, 10);
+    updateScore();
+  }
+
+  const imageState = {};
+
   images.forEach((img) => {
+    const objectName = img.getAttribute("data-name");
+    const objectValue = getRandomValue();
+
+    imageState[objectName] = {
+      clicked: false,
+      value: objectValue,
+    };
+
     img.addEventListener("click", function () {
-      if (!img.classList.contains("found")) {
-        img.classList.add("found");
-        const objectName = img.getAttribute("data-name");
-        showMessage(objectName);
+      if (!imageState[objectName].clicked) {
+        imageState[objectName].clicked = true;
+
+        showMessage(objectName, imageState[objectName].value);
 
         // Adicionar pontos ao placar
-        score += 5;
+        score += imageState[objectName].value;
         updateScore();
 
-        // Remover a classe "found" e ocultar a mensagem automaticamente após 1 segundo
+        // Salvar pontuação no localStorage
+        localStorage.setItem("score", score);
+
         setTimeout(() => {
           img.classList.remove("found");
           hideMessage();
         }, 1000);
 
-        // Verificar se todos os itens foram encontrados
         foundCount++;
         if (foundCount === images.length) {
-          // Exibir mensagem de vitória após encontrar todos os itens
           setTimeout(() => {
             showWinMessage();
           }, 500);
@@ -35,10 +52,10 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-  function showMessage(objectName) {
-    message.textContent = `Objeto encontrado: ${objectName}`;
+  function showMessage(objectName, objectValue) {
+    message.textContent = `Objeto encontrado: ${objectName} `;
     message.style.display = "block";
-    setTimeout(hideMessage, 2000); // A mensagem será exibida por 2 segundos (ajuste conforme necessário)
+    setTimeout(hideMessage, 2000);
   }
 
   function hideMessage() {
@@ -51,6 +68,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
   function showWinMessage() {
     winMessage.style.display = "block";
+  }
+
+  function getRandomValue() {
+    return Math.floor(Math.random() * 10) + 1;
   }
 });
 
