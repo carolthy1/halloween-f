@@ -5,5 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="desafio1.css" />
   </head>
-  <body></body>
+  <link
+    href="https://fonts.googleapis.com/css?family=Creepster"
+    rel="stylesheet"
+  />
+  <body>
+    <div class="score" id="score">Pontuação: 0</div>
+
+    <div class="contain">
+      <img
+        src="img/abobora.png"
+        class="hidden"
+        id="abobora"
+        data-name="Abóbora"
+      />
+      <img src="img/bruxa.png" class="hidden" id="bruxa" data-name="Bruxa" />
+
+      <img
+        src="img/gato_preto.png"
+        class="hidden"
+        id="gato_preto"
+        data-name="Gato Preto"
+      />
+      <img
+        src="img/esqueleto.png"
+        class="hidden"
+        id="esqueleto"
+        data-name="Esqueleto"
+      />
+      <img
+        src="img/morcego.png"
+        class="hidden"
+        id="morcego"
+        data-name="Morcego"
+      />
+      <img src="img/aranha.png" class="hidden" id="aranha" data-name="Aranha" />
+    </div>
+
+    <div class="message" id="message"></div>
+    <div class="win-message" id="win-message">
+      <p>Parabéns! Você encontrou todos os objetos!</p>
+      <button onclick="redirectToHome()">Voltar para Home</button>
+    </div>
+
+    <script src="desafio1.js"></script>
+  </body>
 </html>
