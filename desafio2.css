@@ -1,0 +1,117 @@
+body {
+  margin: 10px;
+  padding: 0;
+  background-image: url("img/cemiterio.png");
+  overflow: hidden;
+  position: relative;
+  background-size: 100vw 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-repeat: no-repeat;
+}
+
+.contain {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+#bruxa {
+  position: absolute;
+  width: 120px;
+  margin-top: 57vh;
+  left: 25vh;
+}
+
+#gato_preto {
+  position: absolute;
+  width: 100px;
+  margin-top: 94vh;
+  left: 154vh;
+}
+
+#morcego {
+  position: absolute;
+  width: 37px;
+  margin-top: 71vh;
+  left: 133vh;
+}
+
+#esqueleto {
+  position: absolute;
+  width: 100px;
+  margin-top: 52vh;
+  left: 177vh;
+}
+
+#aranha {
+  position: absolute;
+  width: 100px;
+  margin-top: 18vh;
+  left: 152vh;
+}
+
+.found {
+  transform: scale(1.5); /* ajuste a escala conforme necessário */
+  z-index: 1;
+}
+
+.message {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 15px;
+  color: rgb(255, 123, 0);
+  border: 2px solid rgb(255, 123, 0);
+  background-color: #000;
+  border-radius: 5px;
+  -webkit-text-stroke-width: 1px; /* largura da borda */
+  -webkit-text-stroke-color: #000;
+  font-size: 18px;
+  z-index: 2;
+  font-family: Creepster;
+}
+
+.score {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  color: aliceblue;
+}
+
+/* Estilo para a mensagem de vitória */
+.win-message {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background-color: #000000;
+  border: 2px solid rgb(255, 123, 0);
+  border-radius: 5px;
+  font-size: 24px;
+  text-align: center;
+  z-index: 3;
+  color: rgb(255, 119, 0);
+}
+
+.win-message button {
+  margin-top: 10px;
+  padding: 10px;
+  font-size: 18px;
+  cursor: pointer;
+  background-color: rgb(255, 123, 0);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+}
+
+.win-message button:hover {
+  background-color: #cc4b00;
+}

@@ -15,3 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
 function irParaDesafio1() {
   window.location.href = "desafio1.html";
 }
+
+function irParaDesafio2() {
+  window.location.href = "desafio2.html";
+}
