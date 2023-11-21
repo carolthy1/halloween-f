@@ -20,36 +20,49 @@ body {
 #bruxa {
   position: absolute;
   width: 120px;
-  margin-top: 57vh;
-  left: 25vh;
+  margin-top: 72vh;
+  left: 128vh;
 }
 
 #gato_preto {
   position: absolute;
-  width: 100px;
+  width: 70px;
   margin-top: 94vh;
   left: 154vh;
 }
 
-#morcego {
+#gato_preto2 {
   position: absolute;
-  width: 37px;
-  margin-top: 71vh;
-  left: 133vh;
+  width: 50px;
+  margin-top: 58vh;
+  left: 188vh;
 }
 
-#esqueleto {
+#gato_preto3 {
   position: absolute;
-  width: 100px;
-  margin-top: 52vh;
-  left: 177vh;
+  width: 50px;
+  margin-top: 53vh;
+  left: 8vh;
+}
+
+#morcego {
+  position: absolute;
+  width: 30px;
+  margin-top: 15vh;
+  left: 50vh;
 }
 
 #aranha {
   position: absolute;
-  width: 100px;
-  margin-top: 18vh;
-  left: 152vh;
+  width: 50px;
+  margin-top: 50vh;
+  left: 50vh;
+}
+#aranha2 {
+  position: absolute;
+  width: 50px;
+  margin-top: 10vh;
+  left: 193vh;
 }
 
 .found {
