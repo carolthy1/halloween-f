@@ -10,10 +10,7 @@ body {
   flex-direction: column;
   background-repeat: no-repeat;
 }
-header {
-  display: flex;
-  justify-content: center;
-}
+
 .contain {
   display: flex;
   justify-content: center;
@@ -30,10 +27,13 @@ header {
   border-radius: 10px;
   margin-top: -5vw;
   justify-content: center;
+  align-items: center; /* Adicionado para centralizar o conteúdo verticalmente */
   backdrop-filter: blur(10px);
   background-color: rgba(223, 223, 223, 0.056);
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-  cursor: pointer;
+
+  flex-direction: column;
+  display: flex;
 }
 
 h1 {
@@ -42,20 +42,21 @@ h1 {
   display: flex;
   justify-content: center;
   font-family: Creepster;
-  -webkit-text-stroke-width: 1px; /* largura da borda */
-  -webkit-text-stroke-color: #000; /* cor da borda */
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #000;
   font-size: 38px;
 }
 
 #titlle {
   color: rgb(255, 123, 0);
-  display: flex;
+
   margin-top: 8vh;
-  justify-content: center;
+
   font-family: Creepster;
-  -webkit-text-stroke-width: 1px; /* largura da borda */
-  -webkit-text-stroke-color: #000; /* cor da borda */
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #000;
   font-size: 38px;
+  margin-left: 41%;
 }
 
 #jogador {
@@ -64,22 +65,19 @@ h1 {
   margin-top: 8vh;
   justify-content: center;
   font-family: Creepster;
-  -webkit-text-stroke-width: 2px; /* largura da borda */
-  -webkit-text-stroke-color: #000; /* cor da borda */
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #000;
   font-size: 38px;
   margin-left: 1vh;
 }
 
-#cemiterio,
+#cemiterio {
+  width: 75%;
+}
+
 #bruxas {
   width: 100%;
   border-radius: 15px;
-}
-
-#cabana {
-  width: 85%;
-  border-radius: 15px;
-  margin-left: 4vh;
 }
 
 .score-display {
@@ -88,29 +86,31 @@ h1 {
   right: 10px;
   font-size: 18px;
   font-weight: bold;
-  color: #fff; /* Cor do texto */
-  background-color: #000; /* Cor de fundo */
+  color: #fff;
+  background-color: #000;
   padding: 5px 10px;
   border-radius: 5px;
-  z-index: 1000; /* Certifique-se de que está acima de outros elementos */
+  z-index: 1000;
 }
 
 #carrinho-btn {
   background-color: rgb(228, 120, 33);
   color: white;
   border: none;
-  padding: 8px;
-  border-radius: 5%;
-  position: fixed;
-  bottom: 30px;
-  right: 30px;
+  border-radius: 50%;
   font-size: 16px;
   cursor: pointer;
-  width: 210px;
-  height: 70px;
+  width: 50px;
+  height: 50px;
 }
 
-#carrinho-btn {
+.bt {
+  background-color: #ff6600;
+  border: #ff6600;
   color: aliceblue;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border-radius: 10px;
+  height: 40px;
+  width: 120px;
+  margin-top: 15px;
+  cursor: pointer;
 }
